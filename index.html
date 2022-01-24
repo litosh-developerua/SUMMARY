@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ResumeShevtsova</title>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <div class="wrapper"> 
+       <header class="header">
+           <div class="header__container _container">
+               <a class="header__logo">
+                   SHEV.DEV
+               </a>
+               <nav class="header__menu menu">
+                   <ul class="menu__list">
+                       <li class="menu__item">
+                           <a href="" class="menu__link">Education</a>
+                       </li>
+                       <li class="menu__item">
+                           <a href="" class="menu__link">Skills</a>
+                       </li>
+                       <li class="menu__item">
+                        <a href="" class="menu__link">Projects</a>
+                       </li>
+                       <li class="menu__item">
+                        <a href="" class="menu__link">Contact</a>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+       </header>
+       <main class="page">
+           <div class="page__main-block main-block">
+               <div class="main-block__container _container">
+                   <div class="main-block__body">
+                        <h1 class="main-block__title">WEB DEVELOPER</h1>
+                        
+                        <div class="main-block__text">
+                            KRISTINA SHEVTSOVA
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/kris.tina.litosh/">
+                                <img class="icon_social" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></img>
+                            </a>
+                            <a href="https://t.me/kristinalitosh">
+                                <img class="icon_social" src="https://cdn.worldvectorlogo.com/logos/telegram-1.svg"></img>
+                            </a>
+                            <a href="https://github.com/litosh-developerua">
+                                <img class="icon_social" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZWM9na5PcnybjMC5TB08Hm-0OKJt62f5dF14zPa14oqKJQpd6fIshZSYknt7fhUnr9q8&usqp=CAUg"></img>
+                            </a>
+                            <a href="https://stock.adobe.com/ru/search?creator_id=208418745&filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=0&filters%5Bis_editorial%5D=all&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&limit=100&search_page=1&search_type=pagination&get_facets=0">
+                                <img class="icon_social" src="data:image/png;base64,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"></img>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kristina-shevtsova-552b9120b/">
+                                <img class="icon_social" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></img>
+                            </a>
+                            
+                        </div>
+                        <h1 class="main-block__title2">resume & more important information</h1>
+                        <div class="main-block__buttons">
+                            <a href="" class="main-block__button main-block__button_pink">Look Portfolio</a>
+                            <a href="" class="main-block__button main-block__button_border">Learn More</a>
+                        </div>
+                    </div>
+               </div>
+               <div class="main-block__image _ibg">
+                   
+               </div>
+           </div>
+           <section class="page__studing studing">
+               <div class="studing__container _container">
+                   <div class="studing__body">
+                       <div class="studing__column">
+                           <div class="studing__item item-stud">
+                               <div class="item-stud__icon">
+                                   <img src="img/studing/03.jpg" alt="Web App">
+                               </div>
+                               <h3 class="item-stud__title">Web App</h3>
+                               <div class="item-stud__text">Создаю приложения и сайты на Native Java Script и React (Redux).Портфлио на GitHub</div>
+                           </div>
+                       </div>
+
+                       <div class="studing__column">
+                        <div class="studing__item item-stud">
+                            <div class="item-stud__icon">
+                                <img src="img/studing/02.jpg" alt="Adaptiv Layout">
+                            </div>
+                            <h3 class="item-stud__title">Adaptiv Layout</h3>
+                            <div class="item-stud__text">Адаптирую приложения и сайты при помощи медиа-запросов и Bootstrap</div>
+                        </div>
+                    </div>
+
+                    <div class="studing__column">
+                        <div class="studing__item item-stud">
+                            <div class="item-stud__icon">
+                                <img src="img/studing/01.jpg" alt="Graphic Design">
+                            </div>
+                            <h3 class="item-stud__title">Graphic Design</h3>
+                            <div class="item-stud__text">Изучаю основы граффического дизайна(UI, UX), создаю макеты в Figma и Photoshop</div>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+            </section>
+            <section class="page__advantages advantages">
+                <div class="advantages__container _container">
+                    <div class="advatages__header header-block">
+                        <h2 class="header-block__title">Experience in numbers</h2>
+                        <div class="header-block__subtitle">Я изучаю разработку самостоятельно, ищу новые источники, смотрю уроки на YouTube, <br>читаю книги, прохожу тесты, работаю над портфолио...</div>
+                    </div>
+                    <div class="advantages__body">
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/advantages/1.png" alt="Java Script lesson`s">
+                                </div>
+                                <div class="advantages__value">254</div>
+                                <div class="advantage__text">Java Script lesson`s</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/advantages/2.png" alt="React(JS) lesson`s">
+                                </div>
+                                <div class="advantages__value">130</div>
+                                <div class="advantage__text">React(JS) lesson`s</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/advantages/3.png" alt="Project`s">
+                                </div>
+                                <div class="advantages__value">018</div>
+                                <div class="advantage__text">Project`s</div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="img/advantages/4.png" alt="Day`s practise">
+                                </div>
+                                <div class="advantages__value">300</div>
+                                <div class="advantage__text">Day`s practise</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <section class="page__projects projects">
+                <section class="animation">
+                    <div class="container reveal">
+                        <h2>Portfolio. React Native</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque repellendus accusamus mollitia non delectus at, similique consequatur. Soluta aut quos nostrum ipsum, accusamus eum modi natus magni tempore neque ducimus?</p>
+                        <div class="cards">
+                            <div class="text-card">
+                                <h3>AMAZON-CLONE</h3>
+                                <p>Create on ReactApp Native and have SignIn page, Home page(with Products and Slider), Checkout page(Shopping Basket), Payment page</p>
+                                <a href="https://litosh-developerua.github.io/amazon-clone/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/amazon.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text-card">
+                                <h3>//////</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis obcaecati, reprehenderit dolore ratione, qui nisi commodi</p>
+                                <a href="https://litosh-developerua.github.io/amazon-clone/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="text-card">
+                                <h3>//////</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis obcaecati, reprehenderit dolore ratione, qui nisi commodi</p>
+                                <a href="https://litosh-developerua.github.io/amazon-clone/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="animation">
+                    <div class="container reveal">
+                        <h2>Portfolio. JavaScript Native</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque repellendus accusamus mollitia non delectus at, similique consequatur. Soluta aut quos nostrum ipsum, accusamus eum modi natus magni tempore neque ducimus?</p>
+                        <div class="cards">
+                            <div class="text-card">
+                                <h3>CALCULATOR</h3>
+                                <p>Create on native JavaScript</p>
+                                <a href="https://litosh-developerua.github.io/Calculator/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/calculator.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text-card">
+                                <h3>PARALLAX SCROLL EFFECT</h3>
+                                <p>Create on native JavaScript, with my vector image</p>
+                                <a href="https://litosh-developerua.github.io/Parallax-Scroll-Effect/"><button>Watch</button></a>
+                                <a href="https://youtu.be/sTKonO4gzkQ"><button>YouTube</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/parallax.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text-card">
+                                <h3>MOVIE APP</h3>
+                                <p>Create on native JavaScript</p>
+                                <a href="https://litosh-developerua.github.io/movie_app/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/movieapp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="animation">
+                    <div class="container reveal">
+                        <h2>Portfolio. JavaScript Native</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque repellendus accusamus mollitia non delectus at, similique consequatur. Soluta aut quos nostrum ipsum, accusamus eum modi natus magni tempore neque ducimus?</p>
+                        <div class="cards">
+                            <div class="text-card">
+                                <h3>TODO APP</h3>
+                                <p>Create on native JavaScript</p>
+                                <a href="https://litosh-developerua.github.io/todos_app/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/todoapp.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text-card">
+                                <h3>PARALLAX SCROLL EFFECT</h3>
+                                <p>Create on native JavaScript, with my vector image</p>
+                                <a href="https://litosh-developerua.github.io/Parallax-Scroll-Effect/"><button>Watch</button></a>
+                                <a href="https://youtu.be/sTKonO4gzkQ"><button>YouTube</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/parallax.png" alt="">
+                                </div>
+                            </div>
+                            <div class="text-card">
+                                <h3>MOVIE APP</h3>
+                                <p>Create on native JavaScript</p>
+                                <a href="https://litosh-developerua.github.io/movie_app/"><button>Watch</button></a>
+                                <div class="cards__image">
+                                    <img src="img/projects/movieapp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </section>
+            <section class="page__practice practice">
+                <div class="practice__container _container">
+                    <div class="practice__header header-block">
+                        <h2 class="header-block__title">Knowledge</h2>
+                        <div class="header-block__subtitle">Я изучаю разработку самостоятельно, ищу новые источники, смотрю уроки на YouTube, <br>читаю книги, прохожу тесты, работаю над портфолио...</div>
+                    </div>
+                        <div class="practice__body">
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">HTML5, CSS3</h4>
+                                        <div class="item-practice__text">
+                                           HTML: метаданные и внешние импорты, валидация, семантика и доступность, списки, картинки, таблицы, ссылки и кнопки, типы полей ввода, атрибуты. CSS: селекторы,flexbox, анимация и трансформация, медиа-запросы, методология БЕМ, взаиморасположение элементов на странице, работа с графикой, формами, таблицами.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/1.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Base Java Script</h4>
+                                        <div class="item-practice__text">
+                                            Базовое понимание языка и его особенностей: структуры данных, строки, числа, объекты и массивы, замыкание и области видимости, методы объекта(bind, call, apply),контектст выполнения и стек вызовов функции,свойства объекта и их конфигурация, прототипы, наследование, обработка ошибок, промисы(async/await), модули.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/2.jpg" alt="Base Java Script">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Base React&Redux</h4>
+                                        <div class="item-practice__text">
+                                            Компоненты, рендеринг ReactDOM, классы компонентов и функциональных компоненты, JSX, состояние, обработка событий, свойства (props), управление состоянием (Redux), роутинг(React Router), стилизация (CSS Modules, styled-components), работа со временем(date-fns), запросы к серверу(axios).
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/3.jpg" alt="Base React&Redux">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Responsive UI</h4>
+                                        <div class="item-practice__text">
+                                            Регулировка разрешения экрана, Picxel Perfect, гибкие изображения, отзывчивые изобажения, настраиваемая структура макета страницы, адаптивная вёрстка с помощью медиа-запросов CSS3, опциональное отображение контента.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/4.jpg" alt="Responsive UI">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="practice__body">
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Basics Web Design</h4>
+                                        <div class="item-practice__text">
+                                            Знаю основы веб-дизайна, умею создавать макеты в Photoshop и Figma, есть небольшое портфолио с которым можно ознакомится по ссылке на этом сайте в разделе "Projects".
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/5.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Design patterns</h4>
+                                        <div class="item-practice__text">
+                                            Ознакомлена с паттернами проектирования теоретически, некоторые из них регулярно применяю в своих проектах и во время обучения. Теорию изучала здесь <a href="https://refactoring.guru/uk/design-patterns">refactoring.guru</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/6.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Algorithms</h4>
+                                        <div class="item-practice__text">
+                                            Изучаю алгоритмы и структуры данных, читаю книги, стараюсь переносить опыт теории на практику
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/7.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">SOLID</h4>
+                                        <div class="item-practice__text">
+                                            Эти принципы важная составляющая мышления разработчика, которую нужно развивать и тренировать. Я осознаю что данные принципы помогут мне в проектах, которые начинаются с нуля, которые требуют постоения системы с возможностью поддержки и развития спустя годы.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/8.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="practice__body">
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Bootstrap</h4>
+                                        <div class="item-practice__text">
+                                            Изучаю и применяю в своей работе Bootstrap, так как этот фреймворк используется по всему миру не только независимыми разработчиками, но и целыми компаниями. Однако, знаю множество альтернатив ему.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/9.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Git</h4>
+                                        <div class="item-practice__text">
+                                            Использую данную систему контроля версий для отката на более старые версии, сравниваю, анализирую, сливаю изменения(Всё в сочетании с GitHub Desktop)
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/10.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">SASS</h4>
+                                        <div class="item-practice__text">
+                                            Более простой и мощный способ написания CSS, который по-настоящему экономит моё время работы при написании стилей. Есть небольшой опыт работы с ними.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/11.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Base Type Script</h4>
+                                        <div class="item-practice__text">
+                                            Ознакомлена с теорией и преимуществами TypeScript перед JavaScript. Данный язык в больших проектах может вести к повышению надёжности программ, которые, при этом, можно разворачивать в тех же средах, где работают обычные JS-приложения.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/12.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="practice__body">
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Stripe</h4>
+                                        <div class="item-practice__text">
+                                            Cамый популярный интернет-эквайринг в мире на данный момент это Stripe. К сожалению, на данный момент он в Украине не работает, однако я всё равно использовала его в своём проекте для наглядности, тем более существуют другие локальные решения. 
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/13.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Gulp</h4>
+                                        <div class="item-practice__text">
+                                            Использовала данный сборщик проектов, изучала его возможности на практике(cоздание веб-сервера и автоматическая перезагрузка страницы в браузере при сохранении кода, слежение за изменениями в файлах проекта, работа с изображениями - сжатие, создание спрайтов, ресайз, автоматизация разнообразного ручного труда).
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/14.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Node.js</h4>
+                                        <div class="item-practice__text">
+                                            Послужил мне возможностью использовать npm - самый большой паетный менеджер. Он становится только популярнее с каждым месяцем, поэтому я не упустила изучение данной технологии.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/15.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">English</h4>
+                                        <div class="item-practice__text">
+                                            Владею английским языком на уровне Pre-intermediate: читаю и понимаю документацию, разговориваю на простые темы и некоторые профессиональные. Продолжаю совершенствовать язык самостоятельно и не откажусь от курсов для положительной динамики дальнейшего карьерного роста.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/16.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="practice__body">
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">VSCode</h4>
+                                        <div class="item-practice__text">
+                                            Бесплатный редактор кода, которым я пользуюсь с самого начала обучения, устанавливаю удобные плагины для упрощения и скорости работы, изучаю горячие клавиши.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/17.jpg" alt="VSCode">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Adobe Photoshop</h4>
+                                        <div class="item-practice__text">
+                                            Работаю с макетами приложений и сайтов, редактирую изображения, создаю иллюстрации, работаю с данной программой около 10ти лет.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/18.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Adobe Illustrator</h4>
+                                        <div class="item-practice__text">
+                                            Создаю красочные иллюстрации, векторы, макеты, иконки, паттерны, шаблоны. Есть небольшие портфолио на стоковых сайтах изображений. Работаю с данной программой 4 года.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/19.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="practice__column">
+                                <div class="practice__item item-practice">
+                                    <div class="item-practice__content">
+                                        <h4 class="item-practice__title">Figma</h4>
+                                        <div class="item-practice__text">
+                                            Умею работать с макетами как верстальщик и создавать макеты как дизайнер.
+                                        </div>
+                                    </div>
+                                    <div class="item-practice__image _ibg">
+                                        <img src="img/practice/20.jpg" alt="HTML5, CSS3">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            
+
+       </main>
+       <footer class="footer">
+           я подвал
+       </footer>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
