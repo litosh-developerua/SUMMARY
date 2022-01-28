@@ -718,6 +718,12 @@ body {
 .text-card img {
   max-height: 250px;
 }
+
+@media (max-width: 800px) {
+  .text-card img {
+    max-height: 80px;
+  }
+}
 .text-card a button {
   background-color: #ff2189;
   color: #fff;
