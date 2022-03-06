@@ -1,6 +1,11 @@
 /* Обнуление */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rancho&display=swap");
-*,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 *::before,
 *::after {
   padding: 0;
@@ -31,7 +36,7 @@ h6 {
 html,
 body {
   height: 100%;
-  background-color: #ffc8c4;
+  background-color: #070707;
   line-height: 1;
   font-size: 14px;
   color: #252b42;
@@ -86,9 +91,9 @@ body {
   min-height: 104px;
   align-items: center;
 }
-@media (max-width: 479px) {
-  .header__container {
-    min-height: 70px;
+@media (max-width: 413px) {
+  .header__container._container {
+    max-width: 70px;
   }
 }
 .header__logo {
@@ -121,11 +126,13 @@ body {
 .menu {
   padding: 5px 0;
 }
+
 .menu__list {
   flex-wrap: wrap;
   display: flex;
   padding-left: 500px;
 }
+
 .menu__item {
 }
 .menu__item:not(:last-child) {
@@ -167,6 +174,7 @@ body {
   letter-spacing: 0.2px;
 }
 .header-block__title {
+  padding-top: 50px;
   font-size: 40px;
   line-height: 142%;
   font-weight: 700;
@@ -722,6 +730,7 @@ body {
   background-color: #ff2189;
   color: #fff;
   padding: 10px;
+  border: none;
   text-transform: uppercase;
   border-radius: 15px;
   transition: 0.2s linear;
